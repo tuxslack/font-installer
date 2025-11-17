@@ -19,14 +19,23 @@
 #                                                                        #
 # You should have received a copy of the GNU General Public License      #
 # along with this program; if not, write to the Free Software            #
-# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,		 #
-# MA 02110-1301 USA							 #
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,		     #
+# MA 02110-1301 USA							                             #
 ##########################################################################
 
+# https://www.pling.com/p/1007676
+
+
+# ---------------------
+# Linguagem automática
+# ---------------------
 
 # Function to set language strings based on the system's language
+
 set_language_strings() {
+
     case "$LANG" in
+
         it_IT* ) # Italian
             ok='Installazione font(s) completata'
             title_ok='Font Installer'
@@ -36,6 +45,7 @@ set_language_strings() {
             title_errors='Errore'
             copying_fonts='Copia dei font in corso...'
             ;;
+
         fr_FR* ) # French
             ok='Installation des polices terminée'
             title_ok='Installateur de polices'
@@ -45,6 +55,7 @@ set_language_strings() {
             title_errors='Erreur'
             copying_fonts='Copie des polices en cours...'
             ;;
+
         es_ES* ) # Spanish
             ok='Instalación de fuentes completada'
             title_ok='Instalador de Fuentes'
@@ -54,6 +65,7 @@ set_language_strings() {
             title_errors='Error'
             copying_fonts='Copiando fuentes en progreso...'
             ;;
+
         de_DE* ) # German
             ok='Schriftarten-Installation abgeschlossen'
             title_ok='Schriftarten-Installer'
@@ -63,6 +75,7 @@ set_language_strings() {
             title_errors='Fehler'
             copying_fonts='Kopiere Schriftarten...'
             ;;
+
         pt_PT* ) # Portuguese
             ok='Instalação de fontes concluída'
             title_ok='Instalador de Fontes'
@@ -72,6 +85,7 @@ set_language_strings() {
             title_errors='Erro'
             copying_fonts='Copiando fontes em andamento...'
             ;;
+
         * ) # Default to English if system language not matched
             ok='Font(s) installation completed'
             title_ok='Font Installer'
@@ -84,70 +98,53 @@ set_language_strings() {
     esac
 }
 
-# Function to create the font directory if it doesn't exist
-create_font_directory() {
-    if [[ ! -e "~/.fonts" ]]; then
-        mkdir -p ~/.fonts
-    fi
+
+# ---------------------
+# Criar diretório
+# ---------------------
+
+create_dir() {
+    [ -d "$HOME/.fonts" ] || mkdir -p "$HOME/.fonts"
 }
 
-# Function to install fonts
+# ---------------------
+# Copiar fontes com progresso
+# ---------------------
+
 install_fonts() {
-    local c=0
-    local n=$#
-    for arg; do
-        nomefont=$(basename "$arg")
-        files=$(echo "$arg" | sed 's/ /\\ /g')
-        mv "${files}" ~/.fonts
-        c=$((c+1))
-        echo $((c*100/n))
+    total=$#
+    count=0
+
+    (
+    for file in "$@"; do
+        cp "$file" "$HOME/.fonts"
+        count=$((count+1))
+        echo $((count * 100 / total))
+        sleep 0.1
     done
+    ) | yad --center --progress --title="$title" --text="$copying" --percentage=0 --auto-close
 }
 
-# Function to display progress dialog
-show_progress_dialog() {
-    local title="$1"
-    local text="$2"
-    
-    zenity --progress --title "$title" --text "$text" --auto-close
+# ---------------------
+# Atualizar cache
+# ---------------------
 
+update_cache() {
+    (
+      fc-cache -fv
+      echo "100"
+    ) | yad --center --progress --title="$title" --text="$updating" --percentage=0 --auto-close
 }
 
-# Function to show error dialog
-show_error_dialog() {
-    local title="$1"
-    local text="$2"
-    zenity --error --text "$text" --title "$title"
-}
+# ---------------------
+# MAIN
+# ---------------------
 
-# Function to show information dialog
-show_info_dialog() {
-    local title="$1"
-    local text="$2"
-    zenity --info --title "$title" --text "$text"
-}
+set_language_strings
+create_dir
+install_fonts "$@"
+update_cache
 
-# Main function
-main() {
-    set_language_strings
-    create_font_directory
+yad --center --info --title="$title" --text="$ok"
 
-    local num_args=$#
-    if ((num_args > 0)); then
-        install_fonts "$@" | show_progress_dialog "$title_ok" "$copying_fonts" "false"
-    fi
-
-    gksu fc-cache -fv | show_progress_dialog "$title_wait" "$wait"
-
-    if [ "$?" -gt 0 ]; then
-        show_error_dialog "$title_errors" "$errors"
-    else
-        show_info_dialog "$title_ok" "$ok"
-    fi
-
-    exit 0
-}
-
-# Call the main function with command-line arguments
-main "$@"
-
+exit 0
