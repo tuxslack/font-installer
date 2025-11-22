@@ -110,66 +110,184 @@ set_language_strings() {
 
     case "$LANG" in
 
-        it_IT* ) # Italian / Italiano
 
-            ok='Installazione font(s) completata.'
-            title_ok='Font Installer'
-            title_wait='Aggiornamento'
-            wait='Aggiornamento lista font in corso...'
-            errors='Si sono verificati degli errori'
-            title_errors='Errore'
-            copying_fonts='Copia dei font in corso...'
-            yad_not_installed="Il programma Yad non è installato."
-            invalid_source_file="Non è stato selezionato alcun file sorgente valido."
-            updatecachefonts="Aggiornamento della cache dei caratteri in corso..."
-            message1="Errore"
-            message2="I seguenti comandi non sono installati"
-            message3="Tutti i comandi sono presenti."
-            message4="Il carattere %s è già installato, lo sto ignorando..."
-            message5="Installazione di %s..."
+        ab ) # Abecásio
 
-            ;;
-
-        fr_FR* ) # French / Francês
-
-            ok='Installation des polices terminée.'
-            title_ok='Installateur de polices'
-            title_wait='Mise à jour'
-            wait='Mise à jour de la liste des polices...'
-            errors='Des erreurs se sont produites'
-            title_errors='Erreur'
-            copying_fonts='Copie des polices en cours...'
-            yad_not_installed="Le programme Yad n'est pas installé."
-            invalid_source_file="Aucun fichier source valide n'a été sélectionné."
-            updatecachefonts="Mise à jour du cache des polices..."
-            message1="Erreur"
-            message2="Les commandes suivantes ne sont pas installées"
-            message3="Toutes les commandes sont présentes."
-            message4="Police %s déjà installée, ignorant..."
-            message5="Installation de %s..."
+            ok='Ашрифт(қәа) рышьақәыргылара хыркәшоуп.'
+            title_ok='Ашрифт ақәыргылаҩ'
+            title_wait='Арҿыцра'
+            wait='Ашрифтқәа рсиа арҿыцра...'
+            errors="Агха ҟалеит'"
+            title_errors='Агха'
+            copying_fonts='Ашрифтқәа рықәҭыхра мҩаԥысуеит...'
+            yad_not_installed="Апрограмма Яд шьақәыргылаӡам."
+            invalid_source_file="Ииашоу ахыҵхырҭатә фаил алхмызт."
+            updatecachefonts="Ашрифт ақәҵа арҿыцра..."
+            message1="Агха"
+            message2="Абарҭ адҵақәа шьақәыргылаӡам"
+            message3="Адҵақәа зегьы ыҟоуп."
+            message4="Ашрифт %s шьақәыргылоуп, хьаас иҟамҵакәа..."
+            message5="Ашьақәыргылара %s..."
 
             ;;
 
-        es_ES*|es ) # 🇪🇸 Spanish / Espanhol
+# af
+# am
+# an
 
-            ok='Instalación de fuentes completada.'
-            title_ok='Instalador de Fuentes'
-            title_wait='Actualización'
-            wait='Actualizando lista de fuentes...'
-            errors='Se produjeron errores'
+        ar ) # Arabic / Árabe
+
+            ok='تم تثبيت الخطوط.'
+            title_ok='مُثبّت الخطوط'
+            title_wait='جاري التحديث'
+            wait='جاري تحديث قائمة الخطوط...'
+            errors='حدثت أخطاء'
+            title_errors='خطأ'
+            copying_fonts='جاري نسخ الخطوط...'
+            yad_not_installed="برنامج Yad غير مُثبّت."
+            invalid_source_file="لم يتم تحديد ملف مصدر صالح."
+            updatecachefonts="جاري تحديث ذاكرة التخزين المؤقت للخطوط..."
+            message1="خطأ"
+            message2="الأوامر التالية غير مُثبّتة."
+            message3="جميع الأوامر موجودة."
+            message4="الخط %s مُثبّت بالفعل، جارٍ تجاهل..."
+            message5="جاري تثبيت %s..."
+
+            ;;
+# as
+# ast
+# az
+# be
+
+        bg ) # Bulgarian / Búlgaro
+
+            ok='Инсталирането на шрифт(ове) е завършено.'
+            title_ok='Инсталатор на шрифтове'
+            title_wait='Актуализиране'
+            wait='Актуализиране на списъка с шрифтове...'
+            errors='Възникнаха грешки'
+            title_errors='Грешка'
+            copying_fonts='Копиране на шрифтове в процес...'
+            yad_not_installed="Програмата Yad не е инсталирана."
+            invalid_source_file="Не е избран валиден изходен файл."
+            updatecachefonts="Актуализиране на кеша на шрифтове..."
+            message1="Грешка"
+            message2="Следните команди не са инсталирани"
+            message3="Всички команди са налични."
+            message4="Шрифт %s вече е инсталиран, игнорира се..."
+            message5="Инсталиране на %s..."
+
+            ;;
+# bn
+# bn_IN
+# br
+# bs
+        bo ) # Tibetan / Tibetano
+
+            ok='ཡིག་གཟུགས་སྒྲིག་འཇུག་མཇུག་སྒྲིལ་ཡོད།'
+            title_ok='ཡིག་གཟུགས་སྒྲིག་འཇུག་བྱེད་མཁན།'
+            title_wait='གསར་བཅོས་བྱེད་བཞིན་པ།'
+            wait='ཡིག་གཟུགས་རེའུ་མིག་གསར་བཅོས་བྱེད་པ།...'
+            errors='ནོར་འཁྲུལ་བྱུང་བ།'
+            title_errors='ནོར་འཁྲུལ'
+            copying_fonts='ཡིག་གཟུགས་འདྲ་བཤུས་བྱེད་བཞིན་པ།'
+            yad_not_installed="ཡ་ཌི་ལས་རིམ་སྒྲིག་འཇུག་བྱས་མེད།"
+            invalid_source_file="ནུས་ལྡན་གྱི་ཐོན་ཁུངས་ཡིག་ཆ་འདེམས་མེད།"
+            updatecachefonts="ཡིག་གཟུགས་ཀྱི་མཛོད་གསར་བཅོས་བྱེད་བཞིན་ཡོད།"
+            message1="ནོར་འཁྲུལ"
+            message2="གཤམ་གྱི་བཀའ་ཚིག་སྒྲིག་འཇུག་བྱས་མེད།"
+            message3="བཀའ་ཚིག་ཚང་མ་ཡོད།"
+            message4="ཡིག་གཟུགས་ %s སྔོན་ནས་སྒྲིག་འཇུག་བྱས་ཟིན།"
+            message5='%s སྒྲིག་འཇུག་བྱེད་བཞིན་ཡོད།...'
+
+            ;;
+
+
+        ca ) # Catalan / Catalão
+
+            ok='Instal·lació de la font(s) completada.'
+            title_ok='Instal·lador de fonts'
+            title_wait='Actualització'
+            wait='Actualitzant la llista de fonts...'
+            errors="S'han produït errors"
             title_errors='Error'
-            copying_fonts='Copiando fuentes en progreso...'
-            yad_not_installed="El programa Yad no está instalado."
-            invalid_source_file="No se ha seleccionado ningún archivo fuente válido."
-            updatecachefonts="Actualizando caché de fuentes..."
+            copying_fonts='Copiant fonts en curs...'
+            yad_not_installed="El programa Yad no està instal·lat."
+            invalid_source_file="No s'ha seleccionat cap fitxer font vàlid."
+            updatecachefonts="Actualitzant la memòria cau de fonts..."
             message1="Error"
-            message2="Los siguientes comandos no están instalados"
-            message3="Todos los comandos están presentes."
-            message4="La fuente %s ya está instalada, ignorando..."
-            message5="Instalando %s..."
+            message2="Les ordres següents no estan instal·lades"
+            message3="Totes les ordres són presents."
+            message4="La font %s ja està instal·lada, ignorant..."
+            message5="Instal·lant %s..."
 
             ;;
 
+# ca@valencia
+
+        ce ) # Checheno
+
+            ok='Шрифт(аш) дӀахӀоттор чекхдаьлла.'
+            title_ok='Шрифт дӀахӀотторхо'
+            title_wait='Карладаккхар'
+            wait='Шрифтийн тептар карладаккхар...'
+            errors="ГӀалаташ нисделла'."
+            title_errors='ГӀалат'
+            copying_fonts='Шрифташ копировать еш ю...'
+            yad_not_installed="Яд программа дӀахӀоттийна яц."
+            invalid_source_file="Цхьа а нийса хьостан файл ца хаьржина."
+            updatecachefonts="Шрифтан кэш карлаяккхар..."
+            message1="ГӀалат"
+            message2="Дагахь латтаде командаш дӀа ца хӀиттийна."
+            message3="Дерриге а омранаш цигахь ду."
+            message4="Шрифт %s хӀинцале а хӀоттийна, тидаме ца оьцуш..."
+            message5="%s дӀахӀоттор..."
+
+            ;;
+# cmn
+# crh
+# cs
+
+
+        cy ) # Welsh / Galês
+
+            ok="Gosod ffont(iau) wedi'i gwblhau."
+            title_ok='Gosodwr Ffontiau'
+            title_wait='Diweddaru'
+            wait='Diweddaru rhestr ffontiau...'
+            errors='Digwyddodd gwallau'
+            title_errors='Gwall'
+            copying_fonts='Copïo ffontiau ar y gweill...'
+            yad_not_installed="Nid yw'r rhaglen Yad wedi'i gosod."
+            invalid_source_file="Ni ddewiswyd ffeil ffynhonnell ddilys."
+            updatecachefonts="Diweddaru storfa ffontiau..."
+            message1="Gwall"
+            message2="Nid yw'r gorchmynion canlynol wedi'u gosod"
+            message3="Mae pob gorchymyn yn bresennol."
+            message4="Ffont %s eisoes wedi'i osod, yn anwybyddu..."
+            message5="Gosod %s..."
+
+            ;;
+
+        da ) # Dinamarquês
+
+            ok='Installation af skrifttype(r) er fuldført.'
+            title_ok='Skrifttypeinstallationsprogram'
+            title_wait='Opdaterer'
+            wait='Opdaterer skrifttypeliste...'
+            errors='Der opstod fejl'
+            title_errors='Fejl'
+            copying_fonts='Kopiering af skrifttyper i gang...'
+            yad_not_installed="Yad-programmet er ikke installeret."
+            invalid_source_file="Der blev ikke valgt nogen gyldig kildefil."
+            updatecachefonts="Opdaterer skrifttypecache..."
+            message1="Fejl"
+            message2="Følgende kommandoer er ikke installeret"
+            message3="Alle kommandoer er til stede."
+            message4="Skrifttype %s er allerede installeret, ignorerer..."
+            message5="Installerer %s..."
+
+            ;;
 
         de_DE*|de ) # 🇩🇪 German / Alemão
 
@@ -194,246 +312,7 @@ set_language_strings() {
             message5="%s wird installiert..."
  
             ;;
-
-        pt_PT* ) # 🇵🇹 Portuguese / Português
-
-            ok='Instalação de fontes concluída.'
-            title_ok='Instalador de Fontes'
-            title_wait='Atualização'
-            wait='Atualizando lista de fontes...'
-            errors='Ocorreram erros'
-            title_errors='Erro'
-            copying_fonts='Copiando fontes em andamento...'
-            yad_not_installed="Programa Yad não esta instalado."
-            invalid_source_file="Nenhum arquivo de fonte válido foi selecionado."
-            updatecachefonts="Atualizando o cache de fontes..."
-            message1="Erro"
-            message2="Os seguintes comandos não estão instalados"
-            message3="Todos os comandos estão presentes."
-            message4="Fonte %s já instalada, ignorando..."
-            message5="Instalando %s..."
-
-            ;;
-
-        pt_BR* ) # 🇧🇷 Brazilian Portuguese / Português brasileiro
-
-            ok='Instalação de fontes concluída.'
-            title_ok='Instalador de Fontes'
-            title_wait='Atualização'
-            wait='Atualizando lista de fontes...'
-            errors='Ocorreram erros'
-            title_errors='Erro'
-            copying_fonts='Copiando fontes em andamento...'
-            yad_not_installed="Programa Yad não esta instalado."
-            invalid_source_file="Nenhum arquivo de fonte válido foi selecionado."
-            updatecachefonts="Atualizando o cache de fontes..."
-            message1="Erro"
-            message2="Os seguintes comandos não estão instalados"
-            message3="Todos os comandos estão presentes."
-            message4="Fonte %s já instalada, ignorando..."
-            message5="Instalando %s..."
-
-            ;;
-
-        ru_RU* ) # 🇷🇺 Russian / Русский / Russo
-
-            ok='Установка шрифтов завершена.'
-            title_ok='Установщик шрифтов'
-            title_wait='Обновить'
-            wait='Обновление списка шрифтов...'
-            errors='Произошли ошибки'
-            title_errors='Ошибка'
-            copying_fonts='Идет копирование шрифтов...'
-            yad_not_installed="Программа Yad не установлена."
-            invalid_source_file="Не выбран допустимый файл шрифта."
-            updatecachefonts="Обновление кэша шрифтов..."
-            message1="Ошибка"
-            message2="Следующие команды не установлены"
-            message3="Все команды присутствуют."
-            message4="Шрифт %s уже установлен, игнорируется..."
-            message5="Установка %s..."
-
-            ;;
-
-        uk_UA*|uk ) # Ukrainian / Ucraniano
-
-            ok='Встановлення шрифту(ів) завершено.'
-            title_ok='Інсталятор шрифтів'
-            title_wait='Оновлення'
-            wait='Оновлення списку шрифтів...'
-            errors='Сталися помилки'
-            title_errors='Помилка'
-            copying_fonts='Триває копіювання шрифтів...'
-            yad_not_installed="Програму Yad не встановлено."
-            invalid_source_file="Не вибрано дійсний вихідний файл."
-            updatecachefonts="Оновлення кешу шрифтів..."
-            message1="Помилка"
-            message2="Наступні команди не встановлено"
-            message3="Усі команди присутні."
-            message4="Шрифт %s вже встановлено, ігнорується..."
-            message5="Встановлення %s..."
-
-            ;;
-
-        ko* ) # Korean / Coreano
-
-            ok='글꼴 설치가 완료되었습니다.'
-            title_ok='글꼴 설치 프로그램'
-            title_wait='업데이트 중'
-            wait='글꼴 목록 업데이트 중...'
-            errors='오류 발생'
-            title_errors='오류'
-            copying_fonts='글꼴 복사 중...'
-            yad_not_installed="Yad 프로그램이 설치되지 않았습니다."
-            invalid_source_file="유효한 원본 파일을 선택하지 않았습니다."
-            updatecachefonts="글꼴 캐시 업데이트 중..."
-            message1="오류"
-            message2="다음 명령이 설치되지 않았습니다."
-            message3="모든 명령이 존재합니다."
-            message4="%s 글꼴이 이미 설치되었습니다. 무시합니다..."
-            message5="%s 설치 중..."
-
-            ;;
-
-        ja* ) # Japanese / Japonês
-
-            ok='フォントのインストールが完了しました'
-            title_ok='フォントインストーラ'
-            title_wait='更新中'
-            wait='フォントリストを更新しています...'
-            errors='エラーが発生しました'
-            title_errors='エラー'
-            copying_fonts='フォントのコピー中...'
-            yad_not_installed="Yad プログラムがインストールされていません"
-            invalid_source_file="有効なソースファイルが選択されていません"
-            updatecachefonts="フォントキャッシュを更新しています..."
-            message1="エラー"
-            message2="以下のコマンドがインストールされていません"
-            message3="すべてのコマンドが存在します"
-            message4="フォント %s は既にインストールされています。無視します..."
-            message5="%s をインストールしています..."
-
-            ;;
-
-        zh_CN* ) # Chinese from mainland China (simplified Mandarin) / Chinês
-
-            ok='字体安装完成'
-            title_ok='字体安装程序'
-            title_wait='正在更新'
-            wait='正在更新字体列表...'
-            errors='发生错误'
-            title_errors='错误'
-            copying_fonts='正在复制字体...'
-            yad_not_installed="Yad 程序未安装"
-            invalid_source_file="未选择有效的源文件"
-            updatecachefonts="正在更新字体缓存..."
-            message1="错误"
-            message2="以下命令未安装"
-            message3="所有命令均已安装"
-            message4="字体 %s 已安装，忽略..."
-            message5="正在安装 %s..."
-
-            ;;
-
-        zh_Hant* ) # Traditional Chinese (generally used in Taiwan and Hong Kong) / Chinês
-
-            ok='字型安裝完成'
-            title_ok='字型安裝程式'
-            title_wait='正在更新'
-            wait='正在更新字體列表...'
-            errors='發生錯誤'
-            title_errors='錯誤'
-            copying_fonts='正在複製字體...'
-            yad_not_installed="Yad 程式未安裝"
-            invalid_source_file="未選擇有效的來源檔案"
-            updatecachefonts="正在更新字體快取..."
-            message1="錯誤"
-            message2="以下命令未安裝"
-            message3="所有指令均已安裝"
-            message4="字型 %s 已安裝，忽略..."
-            message5="正在安裝 %s..."
-
-            ;;
-
-        pl_PL*|pl ) # 🇵🇱 Polish / Polonês
-
-            ok='Instalacja czcionek zakończona.'
-            title_ok='Instalator czcionek'
-            title_wait='Aktualizacja'
-            wait='Aktualizowanie listy czcionek...'
-            errors='Wystąpiły błędy'
-            title_errors='Błąd'
-            copying_fonts='Trwa kopiowanie czcionek...'
-            yad_not_installed="Program Yad nie jest zainstalowany."
-            invalid_source_file="Nie wybrano prawidłowego pliku źródłowego."
-            updatecachefonts="Aktualizowanie pamięci podręcznej czcionek..."
-            message1="Błąd"
-            message2="Następujące polecenia nie zostały zainstalowane."
-            message3="Wszystkie polecenia są obecne."
-            message4="Czcionka %s jest już zainstalowana, ignoruję..."
-            message5="Instalowanie %s..."
-
-            ;;
-
-        hu_HU*|hu ) # 🇭🇺 Hungarian / Húngaro
-
-            ok='Betűtípus(ok) telepítése befejeződött.'
-            title_ok='Betűtípustelepítő'
-            title_wait='Frissítés'
-            wait='Betűtípuslista frissítése...'
-            errors="Hiba történt'"
-            title_errors='Hiba'
-            copying_fonts='Betűtípusok másolása folyamatban...'
-            yad_not_installed="A Yad program nincs telepítve."
-            invalid_source_file="Nincs érvényes forrásfájl kiválasztva."
-            updatecachefonts="Betűtípus-gyorsítótár frissítése..."
-            message1="Hiba"
-            message2="A következő parancsok nincsenek telepítve"
-            message3="Minden parancs jelen van."
-            message4="A(z) %s betűtípus már telepítve van, figyelmen kívül hagyva..."
-            message5="%s telepítése..."
-
-            ;;
-
-        tr_TR*|tr ) # Turkish / Turco
-
-            ok='Yazı tipi(leri) kurulumu tamamlandı.'
-            title_ok='Yazı Tipi Yükleyici'
-            title_wait='Güncelleniyor'
-            wait='Yazı tipi listesi güncelleniyor...'
-            errors='Hatalar oluştu'
-            title_errors='Hata'
-            copying_fonts='Yazı tipleri kopyalanıyor...'
-            yad_not_installed="Yad programı kurulu değil."
-            invalid_source_file="Geçerli bir kaynak dosyası seçilmedi."
-            updatecachefonts="Yazı tipi önbelleği güncelleniyor..."
-            message1="Hata"
-            message2="Aşağıdaki komutlar kurulu değil"
-            message3="Tüm komutlar mevcut."
-            message4="%s yazı tipi zaten kurulu, yoksayılıyor..."
-            message5="%s kuruluyor..."
-
-            ;;
-
-        sk_SK*|sk ) # 🇸🇰 Slovak / Eslovaco (Eslováquia)
-
-            ok='Namestitev pisave(-e) je končana.'
-            title_ok='Namestitveni program za pisave'
-            title_wait='Posodabljanje'
-            wait='Posodabljanje seznama pisav...'
-            errors='Prišlo je do napak'
-            title_errors='Napaka'
-            copying_fonts='Kopiranje pisav je v teku...'
-            yad_not_installed="Program Yad ni nameščen."
-            invalid_source_file="Izbrana ni bila nobena veljavna izvorna datoteka."
-            updatecachefonts="Posodabljanje predpomnilnika pisav..."
-            message1="Napaka"
-            message2="Naslednji ukazi niso nameščeni"
-            message3="Vsi ukazi so prisotni."
-            message4="Pisava %s je že nameščena, ignoriranje..."
-            message5="Nameščanje %s..."
-
-            ;;
+# dz
 
         el ) # Greek / Grego
 
@@ -455,6 +334,121 @@ set_language_strings() {
 
             ;;
 
+# en_AU
+# en_CA
+
+        en_US* ) # 🇺🇸 English / Inglês
+
+            ok='Font(s) installation completed.'
+            title_ok='Font Installer'
+            title_wait='Updating'
+            wait='Updating font list...'
+            errors='Errors occurred'
+            title_errors='Error'
+            copying_fonts='Copying fonts in progress...'
+            yad_not_installed="The Yad program is not installed."
+            invalid_source_file="No valid source file was selected."
+            updatecachefonts="Updating font cache..."
+            message1="Error"
+            message2="The following commands are not installed"
+            message3="All commands are present."
+            message4="Font %s already installed, ignoring..."
+            message5="Installing %s..."
+
+            ;;
+# eo
+
+        es_ES*|es ) # 🇪🇸 Spanish / Espanhol
+
+            ok='Instalación de fuentes completada.'
+            title_ok='Instalador de Fuentes'
+            title_wait='Actualización'
+            wait='Actualizando lista de fuentes...'
+            errors='Se produjeron errores'
+            title_errors='Error'
+            copying_fonts='Copiando fuentes en progreso...'
+            yad_not_installed="El programa Yad no está instalado."
+            invalid_source_file="No se ha seleccionado ningún archivo fuente válido."
+            updatecachefonts="Actualizando caché de fuentes..."
+            message1="Error"
+            message2="Los siguientes comandos no están instalados"
+            message3="Todos los comandos están presentes."
+            message4="La fuente %s ya está instalada, ignorando..."
+            message5="Instalando %s..."
+
+            ;;
+# es_AR
+# es_CL
+# es_CO
+# es_MX
+# et
+# eu
+
+        fa_IR*|fa ) # Persian / Persa
+
+            ok='نصب فونت(ها) تکمیل شد.'
+            title_ok='نصب‌کننده فونت'
+            title_wait='در حال به‌روزرسانی'
+            wait='به‌روزرسانی فهرست فونت‌ها...'
+            errors='خطاهایی رخ داد'
+            title_errors='خطا'
+            copying_fonts='کپی کردن فونت‌ها در حال انجام است...'
+            yad_not_installed="برنامه‌ی Yad نصب نشده است."
+            invalid_source_file="هیچ فایل منبع معتبری انتخاب نشده است."
+            updatecachefonts="در حال به‌روزرسانی حافظه‌ی نهان فونت..."
+            message1="خطا"
+            message2="دستورات زیر نصب نشده‌اند"
+            message3="همه‌ی دستورات وجود دارند."
+            message4="فونت %s قبلاً نصب شده است، نادیده گرفته می‌شود..."
+            message5="در حال نصب %s..."
+
+            ;;
+# fi
+
+        fil ) # Filipino
+
+            ok='Nakumpleto na ang pag-install ng font.'
+            title_ok='Font Installer'
+            title_wait='Ina-update'
+            wait='Ina-update ang listahan ng font...'
+            errors='May naganap na mga error'
+            title_errors='Error'
+            copying_fonts='Kinokopya ang mga font...'
+            yad_not_installed="Hindi naka-install ang Yad program."
+            invalid_source_file="Walang napiling wastong source file."
+            updatecachefonts="Ina-update ang font cache..."
+            message1="Error"
+            message2="Hindi naka-install ang mga sumusunod na command"
+            message3="Naroon ang lahat ng command."
+            message4="Naka-install na ang font %s, hindi pinapansin..."
+            message5="Ini-install ang %s..."
+
+            ;;
+
+
+        fr_FR* ) # French / Francês
+
+            ok='Installation des polices terminée.'
+            title_ok='Installateur de polices'
+            title_wait='Mise à jour'
+            wait='Mise à jour de la liste des polices...'
+            errors='Des erreurs se sont produites'
+            title_errors='Erreur'
+            copying_fonts='Copie des polices en cours...'
+            yad_not_installed="Le programme Yad n'est pas installé."
+            invalid_source_file="Aucun fichier source valide n'a été sélectionné."
+            updatecachefonts="Mise à jour du cache des polices..."
+            message1="Erreur"
+            message2="Les commandes suivantes ne sont pas installées"
+            message3="Toutes les commandes sont présentes."
+            message4="Police %s déjà installée, ignorant..."
+            message5="Installation de %s..."
+
+            ;;
+# frp
+# fur
+# fy
+
         ga ) # Irish / Irlandês
 
             ok='Suiteáil cló(nna) críochnaithe.'
@@ -472,268 +466,6 @@ set_language_strings() {
             message3="Tá na horduithe go léir i láthair."
             message4="Cló %s suiteáilte cheana féin, ag déanamh neamhaird..."
             message5="Ag suiteáil %s..."
-
-            ;;
-
-
-        ro ) # Romanian / Romeno
-
-            ok='Instalarea fontului(elor) finalizată.'
-            title_ok='Program de instalare fonturi'
-            title_wait='Actualizare'
-            wait='Actualizare listă fonturi...'
-            errors='Au apărut erori'
-            title_errors='Eroare'
-            copying_fonts='Copierea fonturilor este în curs...'
-            yad_not_installed="Programul Yad nu este instalat."
-            invalid_source_file="Nu a fost selectat niciun fișier sursă valid."
-            updatecachefonts="Actualizare memorie cache fonturi..."
-            message1="Eroare"
-            message2="Următoarele comenzi nu sunt instalate"
-            message3="Toate comenzile sunt prezente."
-            message4="Fontul %s este deja instalat, se ignoră..."
-            message5="Se instalează %s..."
-
-            ;;
-
-        ab ) # Abecásio
-
-            ok='Ашрифт(қәа) рышьақәыргылара хыркәшоуп.'
-            title_ok='Ашрифт ақәыргылаҩ'
-            title_wait='Арҿыцра'
-            wait='Ашрифтқәа рсиа арҿыцра...'
-            errors="Агха ҟалеит'"
-            title_errors='Агха'
-            copying_fonts='Ашрифтқәа рықәҭыхра мҩаԥысуеит...'
-            yad_not_installed="Апрограмма Яд шьақәыргылаӡам."
-            invalid_source_file="Ииашоу ахыҵхырҭатә фаил алхмызт."
-            updatecachefonts="Ашрифт ақәҵа арҿыцра..."
-            message1="Агха"
-            message2="Абарҭ адҵақәа шьақәыргылаӡам"
-            message3="Адҵақәа зегьы ыҟоуп."
-            message4="Ашрифт %s шьақәыргылоуп, хьаас иҟамҵакәа..."
-            message5="Ашьақәыргылара %s..."
-
-            ;;
-
-        ar ) # Arabic / Árabe
-
-            ok='تم تثبيت الخطوط.'
-            title_ok='مُثبّت الخطوط'
-            title_wait='جاري التحديث'
-            wait='جاري تحديث قائمة الخطوط...'
-            errors='حدثت أخطاء'
-            title_errors='خطأ'
-            copying_fonts='جاري نسخ الخطوط...'
-            yad_not_installed="برنامج Yad غير مُثبّت."
-            invalid_source_file="لم يتم تحديد ملف مصدر صالح."
-            updatecachefonts="جاري تحديث ذاكرة التخزين المؤقت للخطوط..."
-            message1="خطأ"
-            message2="الأوامر التالية غير مُثبّتة."
-            message3="جميع الأوامر موجودة."
-            message4="الخط %s مُثبّت بالفعل، جارٍ تجاهل..."
-            message5="جاري تثبيت %s..."
-
-            ;;
-
-        bo ) # Tibetan / Tibetano
-
-            ok='ཡིག་གཟུགས་སྒྲིག་འཇུག་མཇུག་སྒྲིལ་ཡོད།'
-            title_ok='ཡིག་གཟུགས་སྒྲིག་འཇུག་བྱེད་མཁན།'
-            title_wait='གསར་བཅོས་བྱེད་བཞིན་པ།'
-            wait='ཡིག་གཟུགས་རེའུ་མིག་གསར་བཅོས་བྱེད་པ།...'
-            errors='ནོར་འཁྲུལ་བྱུང་བ།'
-            title_errors='ནོར་འཁྲུལ'
-            copying_fonts='ཡིག་གཟུགས་འདྲ་བཤུས་བྱེད་བཞིན་པ།'
-            yad_not_installed="ཡ་ཌི་ལས་རིམ་སྒྲིག་འཇུག་བྱས་མེད།"
-            invalid_source_file="ནུས་ལྡན་གྱི་ཐོན་ཁུངས་ཡིག་ཆ་འདེམས་མེད།"
-            updatecachefonts="ཡིག་གཟུགས་ཀྱི་མཛོད་གསར་བཅོས་བྱེད་བཞིན་ཡོད།"
-            message1="ནོར་འཁྲུལ"
-            message2="གཤམ་གྱི་བཀའ་ཚིག་སྒྲིག་འཇུག་བྱས་མེད།"
-            message3="བཀའ་ཚིག་ཚང་མ་ཡོད།"
-            message4="ཡིག་གཟུགས་ %s སྔོན་ནས་སྒྲིག་འཇུག་བྱས་ཟིན།"
-            message5='%s སྒྲིག་འཇུག་བྱེད་བཞིན་ཡོད།...'
-
-            ;;
-
-        bg ) # Bulgarian / Búlgaro
-
-            ok='Инсталирането на шрифт(ове) е завършено.'
-            title_ok='Инсталатор на шрифтове'
-            title_wait='Актуализиране'
-            wait='Актуализиране на списъка с шрифтове...'
-            errors='Възникнаха грешки'
-            title_errors='Грешка'
-            copying_fonts='Копиране на шрифтове в процес...'
-            yad_not_installed="Програмата Yad не е инсталирана."
-            invalid_source_file="Не е избран валиден изходен файл."
-            updatecachefonts="Актуализиране на кеша на шрифтове..."
-            message1="Грешка"
-            message2="Следните команди не са инсталирани"
-            message3="Всички команди са налични."
-            message4="Шрифт %s вече е инсталиран, игнорира се..."
-            message5="Инсталиране на %s..."
-
-            ;;
-
-        da ) # Dinamarquês
-
-            ok='Installation af skrifttype(r) er fuldført.'
-            title_ok='Skrifttypeinstallationsprogram'
-            title_wait='Opdaterer'
-            wait='Opdaterer skrifttypeliste...'
-            errors='Der opstod fejl'
-            title_errors='Fejl'
-            copying_fonts='Kopiering af skrifttyper i gang...'
-            yad_not_installed="Yad-programmet er ikke installeret."
-            invalid_source_file="Der blev ikke valgt nogen gyldig kildefil."
-            updatecachefonts="Opdaterer skrifttypecache..."
-            message1="Fejl"
-            message2="Følgende kommandoer er ikke installeret"
-            message3="Alle kommandoer er til stede."
-            message4="Skrifttype %s er allerede installeret, ignorerer..."
-            message5="Installerer %s..."
-
-            ;;
-
-        yo ) # Iorubá
-
-            ok='Fifi sori Font(s) ti pari.'
-            title_ok='Olùfi sori Font'
-            title_wait='Nmu dojuiwọn'
-            wait='Nmu akojọ awọn fonti ṣe imudojuiwọn...'
-            errors="Awọn aṣiṣe waye'"
-            title_errors='Aṣiṣe'
-            copying_fonts='Ṣiṣakọ awọn fonti n lọ lọwọ...'
-            yad_not_installed="Eto Yad ko si."
-            invalid_source_file="Ko si faili orisun to wulo ti a yan."
-            updatecachefonts="Nmu awọn kaṣe fonti ṣe imudojuiwọn..."
-            message1="Aṣiṣe"
-            message2="Awọn aṣẹ wọnyi ko si sori ẹrọ"
-            message3="Gbogbo awọn aṣẹ wa."
-            message4="Font %s ti fi sori ẹrọ tẹlẹ, aibikita..."
-            message5="Nfi %s sori ẹrọ..."
-
-            ;;
-
-        nl ) # Dutch / Holandês
-
-            ok='Installatie van lettertype(n) voltooid.'
-            title_ok='Lettertype-installatieprogramma'
-            title_wait='Bijwerken'
-            wait='Lettertypelijst bijwerken...'
-            errors='Er zijn fouten opgetreden'
-            title_errors='Fout'
-            copying_fonts='Lettertypen kopiëren bezig...'
-            yad_not_installed="Het Yad-programma is niet geïnstalleerd."
-            invalid_source_file="Er is geen geldig bronbestand geselecteerd."
-            updatecachefonts="Lettertypecache bijwerken..."
-            message1="Fout"
-            message2="De volgende opdrachten zijn niet geïnstalleerd"
-            message3="Alle opdrachten zijn aanwezig."
-            message4="Lettertype %s is al geïnstalleerd, negeren..."
-            message5="%s installeren..."
-
-            ;;
-
-        cy ) # Welsh / Galês
-
-            ok="Gosod ffont(iau) wedi'i gwblhau."
-            title_ok='Gosodwr Ffontiau'
-            title_wait='Diweddaru'
-            wait='Diweddaru rhestr ffontiau...'
-            errors='Digwyddodd gwallau'
-            title_errors='Gwall'
-            copying_fonts='Copïo ffontiau ar y gweill...'
-            yad_not_installed="Nid yw'r rhaglen Yad wedi'i gosod."
-            invalid_source_file="Ni ddewiswyd ffeil ffynhonnell ddilys."
-            updatecachefonts="Diweddaru storfa ffontiau..."
-            message1="Gwall"
-            message2="Nid yw'r gorchmynion canlynol wedi'u gosod"
-            message3="Mae pob gorchymyn yn bresennol."
-            message4="Ffont %s eisoes wedi'i osod, yn anwybyddu..."
-            message5="Gosod %s..."
-
-            ;;
-
-        nn_NO*|nn ) # Norwegian / Norueguês (Noruega)
-
-            ok='Installasjon av skrift(er) fullført.'
-            title_ok='Skriftinstallasjonsprogram'
-            title_wait='Oppdaterer'
-            wait='Oppdaterer skriftliste...'
-            errors='Det oppsto feil'
-            title_errors='Feil'
-            copying_fonts='Kopiering av skrifttyper pågår...'
-            yad_not_installed="Yad-programmet er ikke installert."
-            invalid_source_file="Ingen gyldig kildefil ble valgt."
-            updatecachefonts="Oppdaterer skriftbuffer..."
-            message1="Feil"
-            message2="Følgende kommandoer er ikke installert"
-            message3="Alle kommandoer er tilgjengelige."
-            message4="Skrift %s er allerede installert, ignorerer..."
-            message5="Installerer %s..."
-
-            ;;
-
-	
-        vi ) # Vietnamese / Vietnamita
-
-            ok='Đã hoàn tất cài đặt phông chữ.'
-            title_ok='Trình cài đặt phông chữ'
-            title_wait='Đang cập nhật'
-            wait='Đang cập nhật danh sách phông chữ...'
-            errors="Đã xảy ra lỗi'"
-            title_errors='Lỗi'
-            copying_fonts='Đang sao chép phông chữ...'
-            yad_not_installed="Chương trình Yad chưa được cài đặt."
-            invalid_source_file="Không chọn được tệp nguồn hợp lệ."
-            updatecachefonts="Đang cập nhật bộ nhớ đệm phông chữ..."
-            message1="Lỗi"
-            message2="Các lệnh sau chưa được cài đặt"
-            message3="Tất cả các lệnh đều có sẵn."
-            message4="Phông chữ %s đã được cài đặt, đang bỏ qua..."
-            message5="Đang cài đặt %s..."
-
-            ;;
-
-        th ) # Thai / Tailandês
-
-            ok='การติดตั้งฟอนต์เสร็จสมบูรณ์'
-            title_ok='ตัวติดตั้งฟอนต์'
-            title_wait='กำลังอัปเดต'
-            wait='กำลังอัปเดตรายการฟอนต์...'
-            errors='เกิดข้อผิดพลาด'
-            title_errors='ข้อผิดพลาด'
-            copying_fonts='กำลังคัดลอกฟอนต์...'
-            yad_not_installed="ยังไม่ได้ติดตั้งโปรแกรม Yad"
-            invalid_source_file="ไม่ได้เลือกไฟล์ต้นฉบับที่ถูกต้อง"
-            updatecachefonts="กำลังอัปเดตแคชฟอนต์..."
-            message1="ข้อผิดพลาด"
-            message2="ไม่ได้ติดตั้งคำสั่งต่อไปนี้"
-            message3="มีคำสั่งทั้งหมด"
-            message4="ฟอนต์ %s ติดตั้งแล้ว กำลังละเว้น..."
-            message5="กำลังติดตั้ง %s..."
-
-            ;;
-
-        ce ) # Checheno
-
-            ok='Шрифт(аш) дӀахӀоттор чекхдаьлла.'
-            title_ok='Шрифт дӀахӀотторхо'
-            title_wait='Карладаккхар'
-            wait='Шрифтийн тептар карладаккхар...'
-            errors="ГӀалаташ нисделла'."
-            title_errors='ГӀалат'
-            copying_fonts='Шрифташ копировать еш ю...'
-            yad_not_installed="Яд программа дӀахӀоттийна яц."
-            invalid_source_file="Цхьа а нийса хьостан файл ца хаьржина."
-            updatecachefonts="Шрифтан кэш карлаяккхар..."
-            message1="ГӀалат"
-            message2="Дагахь латтаде командаш дӀа ца хӀиттийна."
-            message3="Дерриге а омранаш цигахь ду."
-            message4="Шрифт %s хӀинцале а хӀоттийна, тидаме ца оьцуш..."
-            message5="%s дӀахӀоттор..."
 
             ;;
 
@@ -757,43 +489,23 @@ set_language_strings() {
 
             ;;
 
-        sv ) # Swedish / Sueco
+        gu ) # Idioma Uigur
 
-            ok='Installation av teckensnitt är slutförd.'
-            title_ok='Teckensnittsinstallationsprogram'
-            title_wait='Uppdaterar'
-            wait='Uppdaterar teckensnittslista...'
-            errors='Fel inträffade'
-            title_errors='Fel'
-            copying_fonts='Kopiering av teckensnitt pågår...'
-            yad_not_installed="Yad-programmet är inte installerat."
-            invalid_source_file="Ingen giltig källfil valdes."
-            updatecachefonts="Uppdaterar teckensnittscachen..."
-            message1="Fel"
-            message2="Följande kommandon är inte installerade"
-            message3="Alla kommandon finns."
-            message4="Teckensnitt %s är redan installerat, ignorerar..."
-            message5="Installerar %s..."
-
-            ;;
-
-        sq ) # Albanian / Albanês
-
-            ok='Instalimi i fontit(eve) përfundoi.'
-            title_ok='Instaluesi i Fontit'
-            title_wait='Duke përditësuar'
-            wait='Duke përditësuar listën e fonteve...'
-            errors='Ndodhën gabime'
-            title_errors='Gabim'
-            copying_fonts='Kopjimi i fonteve është në proces...'
-            yad_not_installed="Programi Yad nuk është instaluar."
-            invalid_source_file="Nuk është zgjedhur asnjë skedar burimor i vlefshëm."
-            updatecachefonts="Duke përditësuar memorjen e përkohshme të fontit..."
-            message1="Gabim"
-            message2="Komandat e mëposhtme nuk janë instaluar"
-            message3="Të gjitha komandat janë të pranishme."
-            message4="Fonti %s është instaluar tashmë, duke injoruar..."
-            message5="Duke instaluar %s..."
+            ok='خەت نۇسخىسى(لار) نىڭ ئورنىتىلىشى تاماملاندى.'
+            title_ok='خەت نۇسخىسى ئورناتقۇچى'
+            title_wait='يېڭىلاش'
+            wait='خەت نۇسخىسى تىزىملىكى يېڭىلىنىۋاتىدۇ...'
+            errors='خاتالىقلار كۆرۈلدى'
+            title_errors='خاتالىق'
+            copying_fonts='خەت نۇسخىسى كۆچۈرۈش داۋاملىشىۋاتىدۇ...'
+            yad_not_installed="كۈچكە ئىگە مەنبە ھۆججىتى تاللانمىدى."
+            invalid_source_file="خەت نۇسخىسىنىڭ كۆزىنى يېڭىلاۋاتىدۇ..."
+            updatecachefonts="خاتالىق"
+            message1="تۆۋەندىكى بۇيرۇقلار ئورنىتىلمىدى"
+            message2="بارلىق بۇيرۇقلار بار."
+            message3="Yad پروگراممىسى ئورنىتىلمىدى."
+            message4="خەت نۇسخىسى %s ئاللىقاچان ئورنىتىلدى، نەزەردىن ساقىت قىلىندى..."
+            message5="%s ئورنىتىلىۋاتىدۇ..."
 
             ;;
 
@@ -837,27 +549,6 @@ set_language_strings() {
 
             ;;
 
-        mn ) # Mongolian / Mongol
-
-            ok='Фонт(ууд)-ын суулгалт дууссан.'
-            title_ok='Фонт суулгагч'
-            title_wait='Шинэчилж байна'
-            wait='Фонтын жагсаалтыг шинэчилж байна...'
-            errors='Алдаа гарлаа'
-            title_errors='Алдаа'
-            copying_fonts='Фонтуудыг хуулж байна...'
-            yad_not_installed="Yad програм суулгаагүй байна."
-            invalid_source_file="Хүчинтэй эх файл сонгогдоогүй байна."
-            updatecachefonts="Фонтын кэшийг шинэчилж байна..."
-            message1="Алдаа"
-            message2="Дараах командууд суулгагдаагүй байна"
-            message3="Бүх командууд байна."
-            message4="%s фонтыг аль хэдийн суулгасан, үл тоомсорлож байна..."
-            message5="%s-г суулгаж байна..."
-
-            ;;
-
-
         hi ) # Hindi
 
             ok='फ़ॉन्ट इंस्टॉलेशन पूरा हो गया है।'
@@ -877,106 +568,115 @@ set_language_strings() {
             message5="%s इंस्टॉल हो रहा है..."
 
             ;;
+# hr
 
-        la ) # Latin / Latim
+        hu_HU*|hu ) # 🇭🇺 Hungarian / Húngaro
 
-            ok='Installatio fontium completa est.'
-            title_ok='Installator Fontium'
-            title_wait='Renovatur'
-            wait='Index fontium renovatur...'
-            errors='Errores facti sunt'
-            title_errors='Error'
-            copying_fonts='Fontes copiantur in progressu...'
-            yad_not_installed="Programma Yad non installatur."
-            invalid_source_file="Nullum fasciculum fontis validum selectum est."
-            updatecachefonts="Cella fontium renovatur..."
-            message1="Error"
-            message2="Sequentia mandata non installatur."
-            message3="Omnia mandata adsunt."
-            message4="Fons %s iam installatur, ignoratur..."
-            message5="%s installatur..."
+            ok='Betűtípus(ok) telepítése befejeződött.'
+            title_ok='Betűtípustelepítő'
+            title_wait='Frissítés'
+            wait='Betűtípuslista frissítése...'
+            errors="Hiba történt'"
+            title_errors='Hiba'
+            copying_fonts='Betűtípusok másolása folyamatban...'
+            yad_not_installed="A Yad program nincs telepítve."
+            invalid_source_file="Nincs érvényes forrásfájl kiválasztva."
+            updatecachefonts="Betűtípus-gyorsítótár frissítése..."
+            message1="Hiba"
+            message2="A következő parancsok nincsenek telepítve"
+            message3="Minden parancs jelen van."
+            message4="A(z) %s betűtípus már telepítve van, figyelmen kívül hagyva..."
+            message5="%s telepítése..."
 
             ;;
+# hy
+# ia
+# id
+# ie
+# ig
+# is
 
-        fil ) # Filipino
 
-            ok='Nakumpleto na ang pag-install ng font.'
+        it_IT* ) # Italian / Italiano
+
+            ok='Installazione font(s) completata.'
             title_ok='Font Installer'
-            title_wait='Ina-update'
-            wait='Ina-update ang listahan ng font...'
-            errors='May naganap na mga error'
-            title_errors='Error'
-            copying_fonts='Kinokopya ang mga font...'
-            yad_not_installed="Hindi naka-install ang Yad program."
-            invalid_source_file="Walang napiling wastong source file."
-            updatecachefonts="Ina-update ang font cache..."
-            message1="Error"
-            message2="Hindi naka-install ang mga sumusunod na command"
-            message3="Naroon ang lahat ng command."
-            message4="Naka-install na ang font %s, hindi pinapansin..."
-            message5="Ini-install ang %s..."
+            title_wait='Aggiornamento'
+            wait='Aggiornamento lista font in corso...'
+            errors='Si sono verificati degli errori'
+            title_errors='Errore'
+            copying_fonts='Copia dei font in corso...'
+            yad_not_installed="Il programma Yad non è installato."
+            invalid_source_file="Non è stato selezionato alcun file sorgente valido."
+            updatecachefonts="Aggiornamento della cache dei caratteri in corso..."
+            message1="Errore"
+            message2="I seguenti comandi non sono installati"
+            message3="Tutti i comandi sono presenti."
+            message4="Il carattere %s è già installato, lo sto ignorando..."
+            message5="Installazione di %s..."
 
             ;;
 
-        fa_IR*|fa ) # Persian / Persa
+        ja* ) # Japanese / Japonês
 
-            ok='نصب فونت(ها) تکمیل شد.'
-            title_ok='نصب‌کننده فونت'
-            title_wait='در حال به‌روزرسانی'
-            wait='به‌روزرسانی فهرست فونت‌ها...'
-            errors='خطاهایی رخ داد'
-            title_errors='خطا'
-            copying_fonts='کپی کردن فونت‌ها در حال انجام است...'
-            yad_not_installed="برنامه‌ی Yad نصب نشده است."
-            invalid_source_file="هیچ فایل منبع معتبری انتخاب نشده است."
-            updatecachefonts="در حال به‌روزرسانی حافظه‌ی نهان فونت..."
-            message1="خطا"
-            message2="دستورات زیر نصب نشده‌اند"
-            message3="همه‌ی دستورات وجود دارند."
-            message4="فونت %s قبلاً نصب شده است، نادیده گرفته می‌شود..."
-            message5="در حال نصب %s..."
-
-            ;;
-
-        sl ) # Slovenian / Esloveno
-
-            ok='Namestitev pisave(-e) je končana.'
-            title_ok='Namestitveni program za pisave'
-            title_wait='Posodabljanje'
-            wait='Posodabljanje seznama pisav...'
-            errors='Prišlo je do napak'
-            title_errors='Napaka'
-            copying_fonts='Kopiranje pisav je v teku...'
-            yad_not_installed="Program Yad ni nameščen."
-            invalid_source_file="Izbrana ni bila nobena veljavna izvorna datoteka."
-            updatecachefonts="Posodabljanje predpomnilnika pisav..."
-            message1="Napaka"
-            message2="Naslednji ukazi niso nameščeni"
-            message3="Vsi ukazi so prisotni."
-            message4="Pisava %s je že nameščena, ignoriranje..."
-            message5="Nameščanje %s..."
+            ok='フォントのインストールが完了しました'
+            title_ok='フォントインストーラ'
+            title_wait='更新中'
+            wait='フォントリストを更新しています...'
+            errors='エラーが発生しました'
+            title_errors='エラー'
+            copying_fonts='フォントのコピー中...'
+            yad_not_installed="Yad プログラムがインストールされていません"
+            invalid_source_file="有効なソースファイルが選択されていません"
+            updatecachefonts="フォントキャッシュを更新しています..."
+            message1="エラー"
+            message2="以下のコマンドがインストールされていません"
+            message3="すべてのコマンドが存在します"
+            message4="フォント %s は既にインストールされています。無視します..."
+            message5="%s をインストールしています..."
 
             ;;
 
-        sr ) # Serbian / Sérvio
+        jv ) # Javanese / Javanês
 
-            ok='Инсталација фонта(ова) је завршена.'
-            title_ok='Инсталатер фонта'
-            title_wait='Ажурирање'
-            wait='Ажурирање листе фонтова...'
-            errors='Дошло је до грешака'
-            title_errors='Грешка'
-            copying_fonts='Копирање фонтова у току...'
-            yad_not_installed="Програм Yad није инсталиран."
-            invalid_source_file="Није изабрана важећа изворна датотека."
-            updatecachefonts="Ажурирање кеш меморије фонта..."
-            message1="Грешка"
-            message2="Следеће команде нису инсталиране"
-            message3="Све команде су присутне."
-            message4="Фонт %s је већ инсталиран, игнорише се..."
-            message5="Инсталирање %s..."
+            ok='Instalasi font wis rampung.'
+            title_ok='Installer Font'
+            title_wait='Nganyari'
+            wait='Nganyari dhaptar font...'
+            errors="Ana kesalahan'"
+            title_errors='Kesalahan'
+            copying_fonts='Nyalin font lagi ditindakake...'
+            yad_not_installed="Program Yad durung diinstal."
+            invalid_source_file="Ora ana file sumber sing valid sing dipilih."
+            updatecachefonts="Nganyari cache font..."
+            message1="Kesalahan"
+            message2="Prentah ing ngisor iki durung diinstal"
+            message3="Kabeh prentah wis ana."
+            message4="Font %s wis diinstal, ora nggatekake..."
+            message5="Nginstal %s..."
 
             ;;
+
+        ka ) # Georgian / Georgiano
+
+            ok='შრიფტ(ებ)ის ინსტალაცია დასრულდა.'
+            title_ok='შრიფტის ინსტალატორი'
+            title_wait='განახლება'
+            wait='შრიფტების სიის განახლება...'
+            errors='შეცდომები მოხდა'
+            title_errors='შეცდომა'
+            copying_fonts='შრიფტების კოპირება მიმდინარეობს...'
+            yad_not_installed="Yad პროგრამა არ არის დაინსტალირებული."
+            invalid_source_file="სწორი საწყისი ფაილი არ არის არჩეული."
+            updatecachefonts="შრიფტების ქეშის განახლება..."
+            message1="შეცდომა"
+            message2="შემდეგი ბრძანებები არ არის დაინსტალირებული"
+            message3="ყველა ბრძანება არსებობს."
+            message4="შრიფტი %s უკვე დაინსტალირებულია, იგნორირებულია..."
+            message5="%s-ის ინსტალაცია..."
+
+            ;;
+# kab
 
         kk ) # Kazakh / Cazaque
 
@@ -1017,6 +717,84 @@ set_language_strings() {
             message5="%s-imik ikkussineq..."
 
             ;;
+# kn
+
+        ko* ) # Korean / Coreano
+
+            ok='글꼴 설치가 완료되었습니다.'
+            title_ok='글꼴 설치 프로그램'
+            title_wait='업데이트 중'
+            wait='글꼴 목록 업데이트 중...'
+            errors='오류 발생'
+            title_errors='오류'
+            copying_fonts='글꼴 복사 중...'
+            yad_not_installed="Yad 프로그램이 설치되지 않았습니다."
+            invalid_source_file="유효한 원본 파일을 선택하지 않았습니다."
+            updatecachefonts="글꼴 캐시 업데이트 중..."
+            message1="오류"
+            message2="다음 명령이 설치되지 않았습니다."
+            message3="모든 명령이 존재합니다."
+            message4="%s 글꼴이 이미 설치되었습니다. 무시합니다..."
+            message5="%s 설치 중..."
+
+            ;;
+
+# ku
+# ku_IQ
+# ky
+
+        la ) # Latin / Latim
+
+            ok='Installatio fontium completa est.'
+            title_ok='Installator Fontium'
+            title_wait='Renovatur'
+            wait='Index fontium renovatur...'
+            errors='Errores facti sunt'
+            title_errors='Error'
+            copying_fonts='Fontes copiantur in progressu...'
+            yad_not_installed="Programma Yad non installatur."
+            invalid_source_file="Nullum fasciculum fontis validum selectum est."
+            updatecachefonts="Cella fontium renovatur..."
+            message1="Error"
+            message2="Sequentia mandata non installatur."
+            message3="Omnia mandata adsunt."
+            message4="Fons %s iam installatur, ignoratur..."
+            message5="%s installatur..."
+
+            ;;
+
+# lo
+# lt
+# lv
+# mai
+# mg
+# mi
+# mk
+# ml
+
+        mn ) # Mongolian / Mongol
+
+            ok='Фонт(ууд)-ын суулгалт дууссан.'
+            title_ok='Фонт суулгагч'
+            title_wait='Шинэчилж байна'
+            wait='Фонтын жагсаалтыг шинэчилж байна...'
+            errors='Алдаа гарлаа'
+            title_errors='Алдаа'
+            copying_fonts='Фонтуудыг хуулж байна...'
+            yad_not_installed="Yad програм суулгаагүй байна."
+            invalid_source_file="Хүчинтэй эх файл сонгогдоогүй байна."
+            updatecachefonts="Фонтын кэшийг шинэчилж байна..."
+            message1="Алдаа"
+            message2="Дараах командууд суулгагдаагүй байна"
+            message3="Бүх командууд байна."
+            message4="%s фонтыг аль хэдийн суулгасан, үл тоомсорлож байна..."
+            message5="%s-г суулгаж байна..."
+
+            ;;
+# mr
+# ms
+# nb
+# nds
 
         ne ) # Nepalese / Nepalês
 
@@ -1038,43 +816,426 @@ set_language_strings() {
 
             ;;
 
-        ka ) # Georgian / Georgiano
+        nl ) # Dutch / Holandês
 
-            ok='შრიფტ(ებ)ის ინსტალაცია დასრულდა.'
-            title_ok='შრიფტის ინსტალატორი'
-            title_wait='განახლება'
-            wait='შრიფტების სიის განახლება...'
-            errors='შეცდომები მოხდა'
-            title_errors='შეცდომა'
-            copying_fonts='შრიფტების კოპირება მიმდინარეობს...'
-            yad_not_installed="Yad პროგრამა არ არის დაინსტალირებული."
-            invalid_source_file="სწორი საწყისი ფაილი არ არის არჩეული."
-            updatecachefonts="შრიფტების ქეშის განახლება..."
-            message1="შეცდომა"
-            message2="შემდეგი ბრძანებები არ არის დაინსტალირებული"
-            message3="ყველა ბრძანება არსებობს."
-            message4="შრიფტი %s უკვე დაინსტალირებულია, იგნორირებულია..."
-            message5="%s-ის ინსტალაცია..."
+            ok='Installatie van lettertype(n) voltooid.'
+            title_ok='Lettertype-installatieprogramma'
+            title_wait='Bijwerken'
+            wait='Lettertypelijst bijwerken...'
+            errors='Er zijn fouten opgetreden'
+            title_errors='Fout'
+            copying_fonts='Lettertypen kopiëren bezig...'
+            yad_not_installed="Het Yad-programma is niet geïnstalleerd."
+            invalid_source_file="Er is geen geldig bronbestand geselecteerd."
+            updatecachefonts="Lettertypecache bijwerken..."
+            message1="Fout"
+            message2="De volgende opdrachten zijn niet geïnstalleerd"
+            message3="Alle opdrachten zijn aanwezig."
+            message4="Lettertype %s is al geïnstalleerd, negeren..."
+            message5="%s installeren..."
 
             ;;
 
-        en_US* ) # 🇺🇸 English / Inglês
+        nn_NO*|nn ) # Norwegian / Norueguês (Noruega)
 
-            ok='Font(s) installation completed.'
-            title_ok='Font Installer'
-            title_wait='Updating'
-            wait='Updating font list...'
-            errors='Errors occurred'
-            title_errors='Error'
-            copying_fonts='Copying fonts in progress...'
-            yad_not_installed="The Yad program is not installed."
-            invalid_source_file="No valid source file was selected."
-            updatecachefonts="Updating font cache..."
-            message1="Error"
-            message2="The following commands are not installed"
-            message3="All commands are present."
-            message4="Font %s already installed, ignoring..."
-            message5="Installing %s..."
+            ok='Installasjon av skrift(er) fullført.'
+            title_ok='Skriftinstallasjonsprogram'
+            title_wait='Oppdaterer'
+            wait='Oppdaterer skriftliste...'
+            errors='Det oppsto feil'
+            title_errors='Feil'
+            copying_fonts='Kopiering av skrifttyper pågår...'
+            yad_not_installed="Yad-programmet er ikke installert."
+            invalid_source_file="Ingen gyldig kildefil ble valgt."
+            updatecachefonts="Oppdaterer skriftbuffer..."
+            message1="Feil"
+            message2="Følgende kommandoer er ikke installert"
+            message3="Alle kommandoer er tilgjengelige."
+            message4="Skrift %s er allerede installert, ignorerer..."
+            message5="Installerer %s..."
+
+            ;;
+# nso
+# oc
+# or
+# pa
+
+
+        pl_PL*|pl ) # 🇵🇱 Polish / Polonês
+
+            ok='Instalacja czcionek zakończona.'
+            title_ok='Instalator czcionek'
+            title_wait='Aktualizacja'
+            wait='Aktualizowanie listy czcionek...'
+            errors='Wystąpiły błędy'
+            title_errors='Błąd'
+            copying_fonts='Trwa kopiowanie czcionek...'
+            yad_not_installed="Program Yad nie jest zainstalowany."
+            invalid_source_file="Nie wybrano prawidłowego pliku źródłowego."
+            updatecachefonts="Aktualizowanie pamięci podręcznej czcionek..."
+            message1="Błąd"
+            message2="Następujące polecenia nie zostały zainstalowane."
+            message3="Wszystkie polecenia są obecne."
+            message4="Czcionka %s jest już zainstalowana, ignoruję..."
+            message5="Instalowanie %s..."
+
+            ;;
+# ps
+
+        pt_PT* ) # 🇵🇹 Portuguese / Português
+
+            ok='Instalação de fontes concluída.'
+            title_ok='Instalador de Fontes'
+            title_wait='Atualização'
+            wait='Atualizando lista de fontes...'
+            errors='Ocorreram erros'
+            title_errors='Erro'
+            copying_fonts='Copiando fontes em andamento...'
+            yad_not_installed="Programa Yad não esta instalado."
+            invalid_source_file="Nenhum arquivo de fonte válido foi selecionado."
+            updatecachefonts="Atualizando o cache de fontes..."
+            message1="Erro"
+            message2="Os seguintes comandos não estão instalados"
+            message3="Todos os comandos estão presentes."
+            message4="Fonte %s já instalada, ignorando..."
+            message5="Instalando %s..."
+
+            ;;
+
+        pt_BR* ) # 🇧🇷 Brazilian Portuguese / Português brasileiro
+
+            ok='Instalação de fontes concluída.'
+            title_ok='Instalador de Fontes'
+            title_wait='Atualização'
+            wait='Atualizando lista de fontes...'
+            errors='Ocorreram erros'
+            title_errors='Erro'
+            copying_fonts='Copiando fontes em andamento...'
+            yad_not_installed="Programa Yad não esta instalado."
+            invalid_source_file="Nenhum arquivo de fonte válido foi selecionado."
+            updatecachefonts="Atualizando o cache de fontes..."
+            message1="Erro"
+            message2="Os seguintes comandos não estão instalados"
+            message3="Todos os comandos estão presentes."
+            message4="Fonte %s já instalada, ignorando..."
+            message5="Instalando %s..."
+
+            ;;
+
+        ro ) # Romanian / Romeno
+
+            ok='Instalarea fontului(elor) finalizată.'
+            title_ok='Program de instalare fonturi'
+            title_wait='Actualizare'
+            wait='Actualizare listă fonturi...'
+            errors='Au apărut erori'
+            title_errors='Eroare'
+            copying_fonts='Copierea fonturilor este în curs...'
+            yad_not_installed="Programul Yad nu este instalat."
+            invalid_source_file="Nu a fost selectat niciun fișier sursă valid."
+            updatecachefonts="Actualizare memorie cache fonturi..."
+            message1="Eroare"
+            message2="Următoarele comenzi nu sunt instalate"
+            message3="Toate comenzile sunt prezente."
+            message4="Fontul %s este deja instalat, se ignoră..."
+            message5="Se instalează %s..."
+
+            ;;
+
+        ru_RU* ) # 🇷🇺 Russian / Русский / Russo
+
+            ok='Установка шрифтов завершена.'
+            title_ok='Установщик шрифтов'
+            title_wait='Обновить'
+            wait='Обновление списка шрифтов...'
+            errors='Произошли ошибки'
+            title_errors='Ошибка'
+            copying_fonts='Идет копирование шрифтов...'
+            yad_not_installed="Программа Yad не установлена."
+            invalid_source_file="Не выбран допустимый файл шрифта."
+            updatecachefonts="Обновление кэша шрифтов..."
+            message1="Ошибка"
+            message2="Следующие команды не установлены"
+            message3="Все команды присутствуют."
+            message4="Шрифт %s уже установлен, игнорируется..."
+            message5="Установка %s..."
+
+            ;;
+# sc
+# si
+
+        sk_SK*|sk ) # 🇸🇰 Slovak / Eslovaco (Eslováquia)
+
+            ok='Namestitev pisave(-e) je končana.'
+            title_ok='Namestitveni program za pisave'
+            title_wait='Posodabljanje'
+            wait='Posodabljanje seznama pisav...'
+            errors='Prišlo je do napak'
+            title_errors='Napaka'
+            copying_fonts='Kopiranje pisav je v teku...'
+            yad_not_installed="Program Yad ni nameščen."
+            invalid_source_file="Izbrana ni bila nobena veljavna izvorna datoteka."
+            updatecachefonts="Posodabljanje predpomnilnika pisav..."
+            message1="Napaka"
+            message2="Naslednji ukazi niso nameščeni"
+            message3="Vsi ukazi so prisotni."
+            message4="Pisava %s je že nameščena, ignoriranje..."
+            message5="Nameščanje %s..."
+
+            ;;
+
+        sl ) # Slovenian / Esloveno
+
+            ok='Namestitev pisave(-e) je končana.'
+            title_ok='Namestitveni program za pisave'
+            title_wait='Posodabljanje'
+            wait='Posodabljanje seznama pisav...'
+            errors='Prišlo je do napak'
+            title_errors='Napaka'
+            copying_fonts='Kopiranje pisav je v teku...'
+            yad_not_installed="Program Yad ni nameščen."
+            invalid_source_file="Izbrana ni bila nobena veljavna izvorna datoteka."
+            updatecachefonts="Posodabljanje predpomnilnika pisav..."
+            message1="Napaka"
+            message2="Naslednji ukazi niso nameščeni"
+            message3="Vsi ukazi so prisotni."
+            message4="Pisava %s je že nameščena, ignoriranje..."
+            message5="Nameščanje %s..."
+
+            ;;
+
+        sq ) # Albanian / Albanês
+
+            ok='Instalimi i fontit(eve) përfundoi.'
+            title_ok='Instaluesi i Fontit'
+            title_wait='Duke përditësuar'
+            wait='Duke përditësuar listën e fonteve...'
+            errors='Ndodhën gabime'
+            title_errors='Gabim'
+            copying_fonts='Kopjimi i fonteve është në proces...'
+            yad_not_installed="Programi Yad nuk është instaluar."
+            invalid_source_file="Nuk është zgjedhur asnjë skedar burimor i vlefshëm."
+            updatecachefonts="Duke përditësuar memorjen e përkohshme të fontit..."
+            message1="Gabim"
+            message2="Komandat e mëposhtme nuk janë instaluar"
+            message3="Të gjitha komandat janë të pranishme."
+            message4="Fonti %s është instaluar tashmë, duke injoruar..."
+            message5="Duke instaluar %s..."
+
+            ;;
+
+        sr ) # Serbian / Sérvio
+
+            ok='Инсталација фонта(ова) је завршена.'
+            title_ok='Инсталатер фонта'
+            title_wait='Ажурирање'
+            wait='Ажурирање листе фонтова...'
+            errors='Дошло је до грешака'
+            title_errors='Грешка'
+            copying_fonts='Копирање фонтова у току...'
+            yad_not_installed="Програм Yad није инсталиран."
+            invalid_source_file="Није изабрана важећа изворна датотека."
+            updatecachefonts="Ажурирање кеш меморије фонта..."
+            message1="Грешка"
+            message2="Следеће команде нису инсталиране"
+            message3="Све команде су присутне."
+            message4="Фонт %s је већ инсталиран, игнорише се..."
+            message5="Инсталирање %s..."
+
+            ;;
+# sr@latin
+
+        sv ) # Swedish / Sueco
+
+            ok='Installation av teckensnitt är slutförd.'
+            title_ok='Teckensnittsinstallationsprogram'
+            title_wait='Uppdaterar'
+            wait='Uppdaterar teckensnittslista...'
+            errors='Fel inträffade'
+            title_errors='Fel'
+            copying_fonts='Kopiering av teckensnitt pågår...'
+            yad_not_installed="Yad-programmet är inte installerat."
+            invalid_source_file="Ingen giltig källfil valdes."
+            updatecachefonts="Uppdaterar teckensnittscachen..."
+            message1="Fel"
+            message2="Följande kommandon är inte installerade"
+            message3="Alla kommandon finns."
+            message4="Teckensnitt %s är redan installerat, ignorerar..."
+            message5="Installerar %s..."
+
+            ;;
+# ta
+# te
+
+        th ) # Thai / Tailandês
+
+            ok='การติดตั้งฟอนต์เสร็จสมบูรณ์'
+            title_ok='ตัวติดตั้งฟอนต์'
+            title_wait='กำลังอัปเดต'
+            wait='กำลังอัปเดตรายการฟอนต์...'
+            errors='เกิดข้อผิดพลาด'
+            title_errors='ข้อผิดพลาด'
+            copying_fonts='กำลังคัดลอกฟอนต์...'
+            yad_not_installed="ยังไม่ได้ติดตั้งโปรแกรม Yad"
+            invalid_source_file="ไม่ได้เลือกไฟล์ต้นฉบับที่ถูกต้อง"
+            updatecachefonts="กำลังอัปเดตแคชฟอนต์..."
+            message1="ข้อผิดพลาด"
+            message2="ไม่ได้ติดตั้งคำสั่งต่อไปนี้"
+            message3="มีคำสั่งทั้งหมด"
+            message4="ฟอนต์ %s ติดตั้งแล้ว กำลังละเว้น..."
+            message5="กำลังติดตั้ง %s..."
+
+            ;;
+# tk
+
+        tr_TR*|tr ) # Turkish / Turco
+
+            ok='Yazı tipi(leri) kurulumu tamamlandı.'
+            title_ok='Yazı Tipi Yükleyici'
+            title_wait='Güncelleniyor'
+            wait='Yazı tipi listesi güncelleniyor...'
+            errors='Hatalar oluştu'
+            title_errors='Hata'
+            copying_fonts='Yazı tipleri kopyalanıyor...'
+            yad_not_installed="Yad programı kurulu değil."
+            invalid_source_file="Geçerli bir kaynak dosyası seçilmedi."
+            updatecachefonts="Yazı tipi önbelleği güncelleniyor..."
+            message1="Hata"
+            message2="Aşağıdaki komutlar kurulu değil"
+            message3="Tüm komutlar mevcut."
+            message4="%s yazı tipi zaten kurulu, yoksayılıyor..."
+            message5="%s kuruluyor..."
+
+            ;;
+
+# ug
+
+        uk_UA*|uk ) # Ukrainian / Ucraniano
+
+            ok='Встановлення шрифту(ів) завершено.'
+            title_ok='Інсталятор шрифтів'
+            title_wait='Оновлення'
+            wait='Оновлення списку шрифтів...'
+            errors='Сталися помилки'
+            title_errors='Помилка'
+            copying_fonts='Триває копіювання шрифтів...'
+            yad_not_installed="Програму Yad не встановлено."
+            invalid_source_file="Не вибрано дійсний вихідний файл."
+            updatecachefonts="Оновлення кешу шрифтів..."
+            message1="Помилка"
+            message2="Наступні команди не встановлено"
+            message3="Усі команди присутні."
+            message4="Шрифт %s вже встановлено, ігнорується..."
+            message5="Встановлення %s..."
+
+            ;;
+# ur
+# uz
+
+	
+        vi ) # Vietnamese / Vietnamita
+
+            ok='Đã hoàn tất cài đặt phông chữ.'
+            title_ok='Trình cài đặt phông chữ'
+            title_wait='Đang cập nhật'
+            wait='Đang cập nhật danh sách phông chữ...'
+            errors="Đã xảy ra lỗi'"
+            title_errors='Lỗi'
+            copying_fonts='Đang sao chép phông chữ...'
+            yad_not_installed="Chương trình Yad chưa được cài đặt."
+            invalid_source_file="Không chọn được tệp nguồn hợp lệ."
+            updatecachefonts="Đang cập nhật bộ nhớ đệm phông chữ..."
+            message1="Lỗi"
+            message2="Các lệnh sau chưa được cài đặt"
+            message3="Tất cả các lệnh đều có sẵn."
+            message4="Phông chữ %s đã được cài đặt, đang bỏ qua..."
+            message5="Đang cài đặt %s..."
+
+            ;;
+# wa
+# xh
+
+        yo ) # Iorubá
+
+            ok='Fifi sori Font(s) ti pari.'
+            title_ok='Olùfi sori Font'
+            title_wait='Nmu dojuiwọn'
+            wait='Nmu akojọ awọn fonti ṣe imudojuiwọn...'
+            errors="Awọn aṣiṣe waye'"
+            title_errors='Aṣiṣe'
+            copying_fonts='Ṣiṣakọ awọn fonti n lọ lọwọ...'
+            yad_not_installed="Eto Yad ko si."
+            invalid_source_file="Ko si faili orisun to wulo ti a yan."
+            updatecachefonts="Nmu awọn kaṣe fonti ṣe imudojuiwọn..."
+            message1="Aṣiṣe"
+            message2="Awọn aṣẹ wọnyi ko si sori ẹrọ"
+            message3="Gbogbo awọn aṣẹ wa."
+            message4="Font %s ti fi sori ẹrọ tẹlẹ, aibikita..."
+            message5="Nfi %s sori ẹrọ..."
+
+            ;;
+
+        zh_CN* ) # Chinese from mainland China (simplified Mandarin) / Chinês
+
+            ok='字体安装完成'
+            title_ok='字体安装程序'
+            title_wait='正在更新'
+            wait='正在更新字体列表...'
+            errors='发生错误'
+            title_errors='错误'
+            copying_fonts='正在复制字体...'
+            yad_not_installed="Yad 程序未安装"
+            invalid_source_file="未选择有效的源文件"
+            updatecachefonts="正在更新字体缓存..."
+            message1="错误"
+            message2="以下命令未安装"
+            message3="所有命令均已安装"
+            message4="字体 %s 已安装，忽略..."
+            message5="正在安装 %s..."
+
+            ;;
+
+        zh_Hant*|zh_HK|zh_TW ) 
+
+                   # Traditional Chinese (generally used in Taiwan and Hong Kong) / Chinês
+
+                   # zh_TW (Taiwan) e zh_HK (Hong Kong) usa Chinês Tradicional.
+
+            ok='字型安裝完成'
+            title_ok='字型安裝程式'
+            title_wait='正在更新'
+            wait='正在更新字體列表...'
+            errors='發生錯誤'
+            title_errors='錯誤'
+            copying_fonts='正在複製字體...'
+            yad_not_installed="Yad 程式未安裝"
+            invalid_source_file="未選擇有效的來源檔案"
+            updatecachefonts="正在更新字體快取..."
+            message1="錯誤"
+            message2="以下命令未安裝"
+            message3="所有指令均已安裝"
+            message4="字型 %s 已安裝，忽略..."
+            message5="正在安裝 %s..."
+
+            ;;
+	
+        zu ) # Zulu (África do Sul)
+
+            ok='Ukufakwa kwefonti kuqediwe.'
+            title_ok='Isifaki Sefonti'
+            title_wait='Isibuyekezo'
+            wait='Kubuyekezwa uhlu lwefonti...'
+            errors="Kuvele amaphutha'"
+            title_errors='Iphutha'
+            copying_fonts='Kukopishwa amafonti kuyaqhubeka...'
+            yad_not_installed="Uhlelo lwe-Yad alufakiwe."
+            invalid_source_file="Akukho fayela lomthombo elivumelekile elikhethiwe."
+            updatecachefonts="Kubuyekezwa i-cache yefonti..."
+            message1="Iphutha"
+            message2="Imiyalo elandelayo ayifakiwe"
+            message3="Yonke imiyalo ikhona."
+            message4="Ifonti %s isivele ifakiwe, indiva..."
+            message5="Kufakwa %s..."
 
             ;;
 
